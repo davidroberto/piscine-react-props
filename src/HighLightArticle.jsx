@@ -1,10 +1,5 @@
 const HighLightArticle = ({ articlesProp }) => {
-  return (
-    <div>
-      <h2>Article mis en avant :</h2>
-      <p>{articlesProp[0].title}</p>
-    </div>
-  );
+  return <h2>{articlesProp[0].title}</h2>;
 };
 
 export default HighLightArticle;
