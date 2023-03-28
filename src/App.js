@@ -1,17 +1,26 @@
-import Header from "./Header";
-import Main from "./Main";
+import ArticlesList from "./ArticlesList";
+import HighLightArticle from "./HighLightArticle";
 
 function App() {
-  const categories = [
-    { id: 1, name: "Fruits" },
-    { id: 2, name: "Vegetables" },
-    { id: 3, name: "Dairy" },
+  const articles = [
+    {
+      title: "React Hooks",
+      content: "React Hooks are awesome!",
+    },
+    {
+      title: "React Context",
+      content: "React Context is awesome!",
+    },
+    {
+      title: "React Router",
+      content: "React Router is awesome!",
+    },
   ];
 
   return (
     <div>
-      <Header categoriesProp={categories} />
-      <Main categoriesProp={categories} />
+      <ArticlesList articlesProp={articles} />
+      <HighLightArticle articlesProp={articles} />
     </div>
   );
 }
